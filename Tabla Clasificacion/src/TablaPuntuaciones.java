@@ -12,7 +12,7 @@ public class TablaPuntuaciones {
 
             while (true) {
                 System.out.print("Introduce el nombre del jugador (deja vacío para terminar): ");
-                String nombre = scanner.nextLine().trim();
+                String nombre = scanner.nextLine().replace(" ", "");
 
                 if (nombre.isEmpty()) {
                     break;
